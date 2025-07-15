@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🌟 SERVER SHIN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>📡 SERVER SHINNE 📡</h1>
+
+    <div class="content">
+        <div class="card neon">
+            <h2>CAMERA SERVER</h2>
+            <img id="camera-stream" class="stream-img">
+        </div>
+
+        <div class="card neon">
+            <h2>🌡️ System Stats</h2>
+            <div id="stats">
+                <p><strong>RAM:</strong> <span id="ram">--</span></p>
+                <p><strong>SWAP:</strong> <span id="swap">--</span></p>
+                <p><strong>CPU Load:</strong> <span id="cpu">--</span></p>
+                <p><strong>CPU Temp:</strong> <span id="cpuTemp">--</span></p>
+                <p><strong>GPU Temp:</strong> <span id="gpuTemp">--</span></p>
+                <p><strong>PMIC Temp:</strong> <span id="pmicTemp">--</span></p>
+                <p><strong>AO Temp:</strong> <span id="aoTemp">--</span></p>
+            </div>
+            <button onclick="fetchTemp()">🔄 Làm mới</button>
+        </div>
+    </div>
+
+    <div class="card neon chart-card">
+        <h2>📊 Temperature Monitor</h2>
+        <canvas id="tempChart"></canvas>
+    </div>
+
+    <footer>
+        📍 Powered by Jetson Nano | Neon UI ✨
+    </footer>
+</div>
+
+<script src="chart.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
